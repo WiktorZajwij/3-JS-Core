@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'digital';
+  src: url(./fonts/digital-readout/TrueType/SFDigitalReadout-Medium.ttf);
+}
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: rgb(1, 2, 26);
+  color: rgb(52, 194, 241);
+  font-family: 'digital';
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+.block {
+  min-height: 150px;
+  margin-bottom: 20px;
+  border: 1px solid rgb(28, 50, 122);
+  
+  padding: 20px 0;
+}
+.block-dateAndTime {
+  text-align: center;
+}
+.block-date {
+  font-size: 30px;
+  margin: auto;
+}
+.block-time {
+  font-size: 120px;
+  margin: auto;
+  font-weight: 400;
+}
+.block-stop-watch {
+  display: flex;
+  margin: auto;
+}
+.block-stop-watch .column {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+
+
+.sw-timer {
+  font-size: 70px;
+  margin-bottom: 40px;
+}
+.sw-timer p {
+  margin: 0;
+}
+.sw-button {
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 12px;
+  border: 1px solid rgb(52, 194, 241);
+  border-radius: 5px;
+  color: rgb(52, 194, 241);
+  padding: 7px 15px;
+  cursor: pointer;
+}
+.sw-button:focus {
+  border-color: rgb(147, 158, 255);
+}
+.sw-display {
+  width: 300px;
+  height: 150px;
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px #e5e5e5;
+}
+
+
+
+button[disabled] {
+  cursor: default;
+  border-color: rgb(147, 158, 255);}
+
+
+
+  /* block-timer */
+  .block-timer {
+    display: flex;
+    margin: auto;
+  }
+    .block-timer .column {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: baseline;
+      align-items: center; 
+    }
+  .block-minutes {
+    margin: 0;
+    text-align: center;
+  }
+  .block-minutes span {
+    display: block;
+    font-size: 25px;
+  }
+  .block-minutes span:first-child {
+    font-size: 100px;
+  }
+  .block-controls button {
+    background-color: transparent;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    margin: 0 5px;
+    border: 1px solid rgb(52, 194, 241);
+    color: rgb(52, 194, 241);
+    cursor: pointer;
+    font-size: 24px;
+  }
+
+  .block-controls button:focus,
+  .timer-controls button:focus {
+    border-color:rgb(147, 158, 255);
+    color:rgb(147, 158, 255);
+  }
+
+
+  .timer-display {
+    font-size: 100px;
+    margin-bottom: 30px;
+  }
+  .timer-controls button {
+    width: 70px;
+    height: 35px;
+    border-radius: 5px;
+    margin: 0 5px;
+    background-color: transparent;
+    border: 1px solid rgb(52, 194, 241);
+    color: rgb(52, 194, 241);
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .block-controls button[disabled],
+  .timer-controls button[disabled] {
+      cursor: default;
+      border-color: rgb(147, 158, 255);
+    }
