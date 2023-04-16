@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image:  url('./pencil.png'), linear-gradient(to bottom, #fff 50%, #000 50%);
+  background-repeat: no-repeat;
+  background-size: 40px, cover;
+  background-position: 350px center, center;
+}
+.wrapper {
+  display: flex;
+  border: 25px solid black;
+  width:1000px;
+  height:600px;
+  margin: 40px auto;
+  border-radius: 30px;
+  background-color: black;
+  box-shadow: 3px 3px 10px #fff;
+}
+
+.task__block {
+  flex-basis: 50%; 
+  background-color: #fff;
+  border-radius: 15px 0 0 15px;
+  padding: 30px;
+  padding-bottom: 0;
+  border-right: 7px solid black;
+  overflow: auto;
+}
+
+.task__title {
+  font-size: 20px;
+  color: rgba(255, 51, 0, 0.527);
+  margin-bottom: 30px;
+}
+
+.task__list {
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+
+.task__item {
+  margin-bottom: 20px;
+}
+
+.new-task__block {
+  text-align: center;
+  flex-basis: 50%;
+  background-color: #fff;
+  border-radius: 0 15px 15px 0;
+  padding: 30px;
+  
+}
+
+.new-task__block input[type='text'] {
+  width: 250px;
+  border: 0;
+  border-bottom: 2px solid #000;
+  margin-bottom: 20px;
+  outline: none;
+  font-size: 18px;
+}
+.new-task__block button[type='button'] {
+  padding: 10px 15px;
+  border: 1px solid gray;
+  background-color: rgb(46, 46, 46);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 1px 2px black;
+}
+button[type='button']:active {
+  transform: translate(1px, 2px);
+  box-shadow: 0 0;
+}
+
+.show-block {
+  display: block;
+}
+.hidden-block {
+  display: none;
+}
+/* modal */
+.modal-error {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  z-index: 2;
+  width: 600px;
+  padding: 20px;
+  background-color: pink;
+  color: rgb(156, 51, 25);
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+
+.modal-title {
+  margin-bottom: 10px;
+}
+
+.modal-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+.modal-close::before,
+.modal-close::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 16px;
+  height: 2px;
+  background-color: rgb(156, 51, 25);
+}
+.modal-close::before {
+  transform:translate(-50%, -50%) rotate(-45deg) ;
+}
+.modal-close::after {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.modal-overlay {
+  position: absolute;
+  z-index: 1;
+  width: 1000px;
+  height: 1000px;
+  background-color: rgba(0, 0, 0, 0.5);
+}

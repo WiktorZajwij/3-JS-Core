@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- <img src="./ipad.png" alt=""> -->
+    <div class="task__block">
+      <h2 class="task__title">Список завдань</h2>
+      <form action="#"  class="task__form" name="task__form">
+        <ul class="task__list">
+          <li class="task__item">
+            <label>
+              <input type="checkbox" name="HTML5" value="HTML5">
+              <span>HTML5</span>
+            </label>
+          </li>
+          <li class="task__item">
+            <label>
+              <input type="checkbox" name="CSS3" value="CSS3">
+              <span>CSS3</span>
+            </label>
+          </li>
+          <li class="task__item">
+            <label>
+              <input type="checkbox" name="SASS/SCSS" value="SASS/SCSS">
+              <span>SASS/SCSS</span>
+            </label>
+          </li>
+          <li class="task__item">
+            <label>
+              <input type="checkbox" name="Bootstrap" value="Bootstrap">
+              <span>Bootstrap</span>
+            </label>
+          </li>
+        </ul>
+      </form>
+    </div>
+    <div class="new-task__block">
+      <h2 class="task__title">Додати нове завдання</h2>
+      <form action="#" name="add-task__form">
+        <p>
+          <input type="text" name="text">
+        </p>
+        <p>
+          <button type="button" name="btn">Додати</button>
+        </p>
+      </form>
+    </div>
+  </div>
+
+
+  <div class="modal-error hidden-block">
+    <h2 class="modal-title">Попередження!</h2>
+    <p class="modal-text">.</p>
+    <button class="modal-close" type="button"></button>
+    <!-- <div class="modal-overlay"></div> -->
+  </div>
+
+  
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
