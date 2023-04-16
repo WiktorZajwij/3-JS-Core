@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+.wrapper {
+  width: 700px;
+  margin: 0 auto;
+}
+form[name="taskMove"] {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+}
+.task-text {
+  width: 210px;
+  border-radius: 3px;
+  border: 1px solid lightgray;
+  outline-color: rgb(139, 195, 228);
+  padding: 5px 10px;
+}
+.task-button {
+  width: 210px;
+  background-color: rgb(12, 194, 6);
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  padding: 5px;
+  cursor: pointer;
+}
+.task-button:hover {
+  background-color: green;
+}
+.task-button:focus {
+  outline: 2px solid rgb(139, 228, 169);
+}
+.task-copy {
+  width: 210px;
+  border-radius: 3px;
+  border: 1px solid lightgray;
+  outline-color: rgb(139, 195, 228);
+  padding: 5px 10px;
+}
+
+
+
+.placeholder-text {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid lightgray;
+  outline-color: rgb(139, 195, 228);
+  padding: 5px 10px;
+}

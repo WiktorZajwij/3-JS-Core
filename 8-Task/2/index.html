@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <form class="create-form" action="#" name="createForm">
+    <h2>Create your account</h2>
+      <ul class="form-list">
+        <li>
+          <p>First Name</p>
+          <input class="first-name" type="text" name="firstName" placeholder="type here..." required>
+        </li>
+        <li>
+          <p>Second Name</p>
+          <input class="second-name" type="text" name="secondName" placeholder="type here..." required>
+        </li>
+        <li>
+          <p>Email address</p>
+          <input class="email" type="email" name="email" placeholder="enter email" required>
+        </li>
+        <li>
+          <label>
+            <input type="radio" name="gender" value="man" checked> <span>man</span>
+          </label>
+          <label>
+            <input type="radio" name="gender" value="woman"> <span>woman</span>
+          </label>
+        </li>
+        <li>
+          <p>Position</p>
+          <select class="position" name="positionSel" required>
+            <option value="">Choose</option>
+            <option value="Frontend">Frontend</option>
+            <option value="Backend">Backend</option>
+            <option value="QC/QA">QC/QA</option>
+          </select>
+        </li>
+        <li>
+          <label>
+            <input class="check" type="checkbox" name="check" required>
+            I agree all statements in Trems of service
+          </label>
+        </li>
+        <li>
+          <input class="submit" type="submit" value="Sing Up" name="submit">
+        </li>
+      </ul>
+  </form>
+
+  <div class="user-card hidden">
+    <div class="user-top">
+      <div class="user-ava">
+        <img class="user-icon" src="./man.svg" alt="">
+      </div>
+    </div>
+    <div class="user-middle">
+      <p>
+        <span class="user-first-name"></span>
+        <span class="user-second-name"></span>
+      </p>
+      <p class="user-email"></p>
+      <p class="user-position"></p>
+      <button class="sing-out" type="button">Sing Out</button>
+    </div>
+    <div class="user-bottom">
+      <ul class="social-list">
+        <li><a href="#"><img src="./f.svg" alt=""></a></li>
+        <li><a href="#"><img src="./git.svg" alt=""></a></li>
+        <li><a href="#"><img src="./linkedin.svg" alt=""></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

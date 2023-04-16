@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+.hidden {
+  display: none;
+}
+.create-form {
+  width: 500px;
+  border: 2px solid lightgray;
+  border-radius: 10px;
+  margin: 0 auto;
+  font-family: sans-serif;
+  font-size: 15px;
+  overflow: hidden;
+  
+}
+h2 {
+text-align: center;
+margin: 0;
+padding: 10px;
+font-size: 24px;
+background-color: rgb(20, 180, 119);
+color: #fff; 
+}
+
+.form-list {
+ margin: 0;
+ padding: 10px 20px;
+ list-style: none; 
+}
+.form-list li {
+  margin-bottom: 7px;
+}
+input, 
+.position {
+  border: 2px solid rgb(241, 240, 240);
+  border-radius: 5px;
+  padding: 7px 10px;
+  
+}
+
+input:focus,
+.position:focus {
+  outline: 2px solid aqua;
+}
+.first-name,
+.second-name, 
+.email, 
+.submit,
+.position {
+  width: 100%;
+}
+.position,
+.check {
+  margin-bottom: 10px;
+}
+
+.submit {
+  cursor: pointer;
+  background-color: rgb(20, 180, 119);
+  color: #fff;
+  font-size: 18px;
+  border-color: rgb(61, 185, 36);
+}
+
+
+
+
+/* user-card */
+.user-card {
+  overflow: hidden;
+  width: 400px;
+  margin: 0 auto;
+  /* min-height: 400px; */
+  border: 2px solid lightgray;
+  border-radius: 10px;
+  font-family: sans-serif;
+}
+.user-top {
+  height: 100px;
+  position: relative;
+  background-color: rgb(20, 180, 119);
+}
+.user-ava {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+.user-middle {
+  padding-top: 70px;
+  text-align: center;
+}
+.user-first-name,
+.user-second-name {
+  font-weight: 700;
+  font-size: 18px;
+}
+.user-position {
+  margin-bottom: 30px;
+}
+.sing-out {
+  cursor: pointer;
+  border: 2px solid rgb(20, 180, 119);
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 10px;
+  color: rgb(20, 180, 119);
+  margin-bottom: 20px;
+}
+.user-bottom {
+  
+  background-color: rgb(20, 180, 119);
+}
+.social-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+}
+.social-list li {
+  margin: 0 7px;
+}
