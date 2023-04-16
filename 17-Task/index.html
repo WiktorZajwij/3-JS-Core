@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div class="wrapper">
+    <div class="timer">01:00</div>
+    <div class="buttons">
+      <button id="start" type="button" class="btn">Start game!</button>
+      <button id="checkRes" type="button" class="btn">Check result</button>
+      <button id="new" type="button" class="btn">New game</button>
+    </div>
+    <div class="container">
+      <div id="left" class="number-box box-left">
+        <div class="number">
+          <div class="num-in num-in1" value="3"></div>
+        </div>
+        <div class="number">
+          <div class="num-in num-in2"></div>
+        </div>
+        <div class="number">
+          <div class="num-in num-in3"></div>
+        </div>
+        <div class="number">
+          <div class="num-in num-in4"></div>
+        </div>
+        <div class="number">
+          <div class="num-in num-in5"></div>
+        </div>
+        <div class="number">
+          <div class="num-in num-in6"></div>
+        </div>
+        <div class="number">
+          <div class="num-in num-in7"></div>
+        </div>
+        <div class="number">
+          <div class="num-in num-in8"></div>
+        </div>
+        <div class="number">
+          <div class="num-in num-in9"></div>
+        </div>
+      </div>
+      
+      <div id="right" class="number-box box-right">
+        <div class="number"></div>
+        <div class="number"></div>
+        <div class="number"></div>
+        <div class="number"></div>
+        <div class="number"></div>
+        <div class="number"></div>
+        <div class="number"></div>
+        <div class="number"></div>
+        <div class="number"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal-overlay">
+    <div class="modal-block">
+      <p class="modal-text">
+        You still have time, you sure? <span class="last-time"></span>
+      </p>
+      <div class="btn-block">
+        <button id="close" type="button" class="btn">Close</button>
+        <button id="closeReload" type="button" class="btn">Close</button>
+        <button id="check" type="button" class="btn">Check</button>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <script src="./jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
