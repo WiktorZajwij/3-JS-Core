@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <form name="singForm">
+    <h2>Please sing up</h2>
+    <div class="input-wrapper">
+      <p class="placeholder-first placeholder-text hidden">First text</p>
+      <input class="first-name" type="text" placeholder="First text">
+      <span class="fisrt-invalid invalid hidden"></span>
+      <span class="fisrt-valid valid hidden"></span>
+      <p class="first-invalid-text invalid-text hidden">Please provide a valid First name.</p>
+    </div>
+    <div class="input-wrapper">
+      <p class="placeholder-last placeholder-text hidden">Last text</p>
+      <input class="last-name" type="text" placeholder="Last text">
+      <span class="last-invalid invalid hidden"></span>
+      <span class="last-valid valid hidden"></span>
+      <p class="last-invalid-text invalid-text hidden">Please provide a valid Last name.</p>
+
+    </div>
+    <div class="input-wrapper">
+      <p class="placeholder-email placeholder-text hidden">Email address</p>
+      <input class="email" type="email" placeholder="Email">
+      <span class="email-invalid invalid hidden"></span>
+      <span class="email-valid valid hidden"></span>
+      <p class="email-invalid-text invalid-text hidden">Please provide a valid Email address.</p>
+
+    </div>
+    <div class="input-wrapper">
+      <p class="placeholder-password placeholder-text hidden">Password</p>
+      <input class="password" type="password" placeholder="Password">
+      <span class="password-invalid invalid hidden"></span>
+      <span class="password-valid valid hidden"></span>
+      <p class="password-invalid-text invalid-text hidden">Please provide a valid Password.</p>
+    </div>
+    <p>
+      <label>
+        <input type="checkbox" class="checkbox">
+        I agree with Privacy Policy.
+      </label>
+    </p>
+    <button type="button" class="btn" disabled>Sing Up</button>
+  </form>
+
+
+
+  <div class="modal-block hidden">
+    <div class="modal-inner">
+      <div class="modal-image" >
+        <img src="./check.svg" width="70" height="70" alt="">
+      </div>
+      <div class="modal-text">
+        <h2>Great!</h2>
+        <p>Your account has been created successefully</p>
+        <button type="submit" class="modal-btn">Start Exploring</button>
+      </div>
+    </div>
+  </div> 
+  <script src="./script.js"></script>
+</body>
+
+</html>
