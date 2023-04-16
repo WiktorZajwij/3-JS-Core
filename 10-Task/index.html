@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="caontainer">
+    <div class="wrapper first-blocks">
+      <div class="block block-top">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="block-middle">
+        <button class="btn btn-edit" value="edit" type="button">edit</button>
+        <button class="btn btn-style" value="style" type="button">style</button>
+      </div>
+      <div class="block block-bottom">
+        <div class="edit-block hide-block">
+          <textarea class="textarea"></textarea>
+          <button class="btn btn-add" value="add" type="button">add</button>
+          <button class="btn btn-save" value="save" type="button">save</button>
+        </div>
+        <div class="style-block hide-block">
+          <form action="#" name="editForm">
+            <fieldset class="font-size">
+              <legend>Font Size:</legend>
+              <p>
+                <label>
+                  <input type="radio" name="fSize" value="12px"> 12px
+                </label>
+                <label>
+                  <input type="radio" name="fSize" value="14px"> 14px
+                </label>
+                <label>
+                  <input type="radio" name="fSize" value="16px" checked> 16px
+                </label>
+                <label>
+                  <input type="radio" name="fSize" value="18px"> 18px
+                </label>
+                <label>
+                  <input type="radio" name="fSize" value="20px"> 20px
+                </label>
+              </p>
+            </fieldset>
+            <fieldset class="font-family">
+              <legend>Font Family:</legend>
+              <select name="fFamily">
+                <option value="">Choose option</option>
+                <option value="cursive">cursive</option>
+                <option value="fantasy">fantasy</option>
+                <option value="serif">serif</option>
+                <option value="sans-serif">sans-serif</option>
+                <option value="monospace">monospace</option>
+              </select>
+            </fieldset>
+            <fieldset class="font-color">
+              <legend>Colors:</legend>
+              <p>
+                <button class="btn btn-color" type="button">Color of Text</button>
+                <button class="btn btn-background" type="button">Background color</button>
+              </p>
+            </fieldset>
+            <fieldset class="font-style">
+              <legend>Style:</legend>
+              <p>
+                <label>
+                  <input type="checkbox" name="checkBold"> Bold text
+                </label>
+                <label>
+                  <input type="checkbox" name="checkCursive"> Cursive text
+                </label>
+              </p>
+            </fieldset>
+          </form>
+          <div class="color-block hide-block">
+            <button type="button" class="color color-1"></button>
+            <button type="button" class="color color-2"></button>
+            <button type="button" class="color color-3"></button>
+            <button type="button" class="color color-4"></button>
+            <button type="button" class="color color-5"></button>
+            <button type="button" class="color color-6"></button>
+            <button type="button" class="color color-7"></button>
+            <button type="button" class="color color-8"></button>
+            <button type="button" class="color color-9"></button>
+      
+      
+          </div>
+          <div class="background-block hide-block">
+            <button class="background background-9"></button>
+            <button class="background background-8"></button>
+            <button class="background background-7"></button>
+            <button class="background background-6"></button>
+            <button class="background background-5"></button>
+            <button class="background background-4"></button>
+            <button class="background background-3"></button>
+            <button class="background background-2"></button>
+            <button class="background background-1"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block add-block hide-block">
+      <h2>Choose what you want:</h2>
+      <div class="choose-block">
+        <label>
+          <input type="radio" name="choose" class="table-check" value="table-check"> table
+        </label>
+        <label>
+          <input type="radio" name="choose" class="list-check" value="list-check"> list
+        </label>
+      </div>
+      <div class="create-table hide-block">
+        <form action="#" name="table-form" class="table-form">
+          <table class="table-top">
+            <tr>
+              <td class="td-title">Count TR:</td>
+              <td class="td-content" colspan="5"><input type="text" name="createTr" placeholder="Count TR:"></td>
+            </tr>
+            <tr>
+              <td class="td-title">Count TD:</td>
+              <td class="td-content" colspan="5"><input type="text" name="createTd" placeholder="Count TD:"></td>
+            </tr>
+          </table>
+          
+          <table class="table-bottom">
+            <caption>Add style to your table:</caption>
+            <tr>
+              <td class="td-title">Width of TD:</td>
+              <td class="td-content" colspan="5"><input type="text" name="widthTd" placeholder="Width of TD:"></td>
+            </tr>
+            <tr>
+              <td class="td-title">Height of TD:</td>
+              <td class="td-content" colspan="5"><input type="text" name="heightTd" placeholder="Width of TD:"></td>
+            </tr>
+            <tr class="border-create">
+              <td class="td-title">Width of border:</td>
+              <td class="td-content"><input type="text" name="borderTd" placeholder="Width:"></td>
+              <td class="td-title">Type of border:</td>
+              <td class="td-content">
+                <select name="typeBorder">
+                  <option value="solid">solid</option>
+                  <option value="dashed">dashed</option>
+                  <option value="dotted">dotted</option>
+                </select>
+              </td>
+              <td class="td-title">Color of border:</td>
+              <td class="td-content">
+                <select name="colorBorder">
+                  <option value="black">black</option>
+                  <option value="red">red</option>
+                  <option value="green">green</option>
+                  <option value="blue">blue</option>
+                </select>
+              </td>
+            </tr>
+          </table>
+          <p>
+            <button class="btn-create-table" name="btnCreateTable" type="button">Create table</button>
+          </p>
+        </form>
+      </div>
+      <div class="create-list hide-block">
+        <form action="#" name="list-form">
+          <table>
+            <tr>
+              <td class="td-title">Count Li:</td>
+              <td class="td-content"><input type="text" name="createLi" class="create-li" placeholder="Count Li:"></td>
+            </tr>
+            <tr>
+              <td class="td-title">Type of marks:</td>
+              <td class="td-content">
+                <select name="typeMarks">
+                  <option value="circle">circle</option>
+                  <option value="disc">disc</option>
+                  <option value="square">square</option>
+                </select>
+              </td>
+            </tr>
+          </table>
+          <p>
+            <button class="btn-create-list" name="btnCreateList" type="button">Create list</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

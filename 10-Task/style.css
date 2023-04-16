@@ -1,0 +1,262 @@
+/* global style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-width: 1200px;
+  font-family: sans-serif;
+}
+.caontainer {
+  width: 60%;
+  margin: 0 auto;
+}
+.block {
+  padding: 20px;
+  background-color: #eeeeee;
+  border: 2px solid #e5e5e5;
+  border-radius: 5px;
+  min-height: 250px;
+}
+.btn {
+  padding: 7px 10px;
+  margin: 10px 0px;
+  border: 0;
+  border-radius: 3px;
+  background-color: gray;
+  color: #ffffff;
+}
+ul {
+  margin: 0 10px;
+  padding: 10px;
+}
+
+/* block-top */
+.block-top {
+  padding: 20px;
+  margin-top: 20px;  
+}
+.block-top p{
+  margin-bottom: 10px;
+}
+
+/* block-middle */
+.block-middle {
+  text-align: center;
+}
+
+
+.block-middle .btn-edit {
+  background-color: rgb(255, 196, 0);
+  color: #000000;
+}
+.block-middle .btn-edit:focus {
+  outline: 3px solid orange;
+}
+.block-middle .btn-style {
+  background-color: rgb(81, 206, 255);
+  color: #ffffff;
+}
+.block-middle .btn-style:focus {
+  outline: 2px solid lightblue;
+}
+
+
+
+/* edit-block */
+.edit-block textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  resize: none;
+}
+.edit-block .btn-add {
+  background-color: red;
+  color: #ffffff;
+}
+.edit-block .btn-save {
+  background-color: green;
+  color: #ffffff;
+}
+.edit-block .btn-add:focus {
+  outline: 3px solid darkred;
+}
+.edit-block .btn-save:focus {
+  outline: 3px solid darkgreen;
+}
+
+
+/* style-block */
+.style-block {
+  display: flex;
+}
+.style-block form {
+  width: 50%;
+}
+.style-block fieldset {
+  border: 0;
+  margin-bottom: 7px;
+}
+.style-block legend {
+  margin-bottom: 7px;
+}
+
+.style-block label {
+ margin-right: 10px; 
+}
+.style-block select {
+  width: 80%;
+  padding: 5px;
+}
+.style-block .btn {
+  margin: 0;
+}
+.style-block .btn:focus {
+  outline: 3px solid rgba(0, 0, 0, 0.699);
+}
+
+
+/* color-block */
+.color-block {
+  display: flex;
+  flex-wrap: wrap;
+  width: 150px;
+  height: 150px;
+  background-color: lightgray; 
+  margin: auto;
+}
+.color-block .color {
+  border: 0;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+
+/* background-block */
+.background-block {
+  display: flex;
+  flex-wrap: wrap;
+  width: 150px;
+  height: 150px;
+  background-color: lightgray;
+  margin: auto;
+}
+
+.background-block .background {
+  width: 50px;
+  height: 50px;
+  border: 0;
+  cursor: pointer;
+}
+
+
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
+
+
+/* add-block */
+.add-block {
+  margin-top: 20px;
+}
+.add-block h2 {
+  margin-bottom: 10px;
+}
+.add-block label {
+  margin-right: 10px;
+}
+
+
+
+/* choose-block */
+.choose-block label,
+.choose-block input {
+  cursor: pointer;
+}
+
+
+/* creater-table */
+.create-table {
+  padding: 10px 0;
+}
+.create-table table {
+  /* width: 670px; */
+  width: 100%;
+  margin-bottom: 10px;
+}
+.create-table td {
+  padding-bottom: 10px;
+}
+.create-table caption {
+  font-size: 20px;
+  font-weight: 700;
+  text-align-last: left;
+  margin-bottom: 10px;
+}
+
+.create-table .td-title {
+  width: 130px;
+}
+.create-table tr:last-child .td-content {
+  min-width: 90px;
+}
+.border-create td {
+  padding-right: 10px;
+}
+.create-table button {
+  cursor: pointer;
+  padding: 7px;
+  border: 0;
+  border-radius: 3px;
+  background-color: green;
+  color: #ffffff;
+}
+
+/* create-list */
+.create-list {
+  padding: 10px 0;
+}
+
+.create-list table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.create-list .td-title {
+  width: 20%;
+}
+.create-list .td-content {
+  width: 80%;
+}
+.td-content input,
+.td-content select {
+  padding: 7px 10px;
+  width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  
+}
+.td-content input:focus,
+.td-content select:focus {
+  outline: 1px solid lightblue;
+ }
+.create-list button {
+  cursor: pointer;
+  padding: 7px;
+  border: 0;
+  border-radius: 3px;
+  background-color: green;
+  color: #ffffff;
+}
+
+
+
+/* hide */
+.hide-block {
+  display: none;
+}
