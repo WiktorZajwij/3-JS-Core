@@ -1,0 +1,156 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  font-family: sans-serif;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+.col {
+  width: 580px;
+  /* background-color: aqua; */
+}
+.form__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.form__item {
+  margin-bottom: 20px;
+}
+.form__label {
+  display: block;
+  margin-bottom: 15px;
+}
+.form__input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid #e5e5e5;
+  outline: none;
+}
+.form__input:focus {
+  /* outline-offset: 1px; */
+  outline: 3px solid lightskyblue;
+}
+.form__input::placeholder {
+  font-size: 15px;
+}
+
+.btn {
+  background: none;
+  border: none;
+  padding: 10px 12px;
+  font-size: inherit;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.form__btn,
+.edit__btn {
+  background: none;
+  border: none;
+  font-size: inherit;
+  border: 1px solid green;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: green;
+}
+.edit__btn {
+  border: 1px solid orange;
+  color: orange;
+}
+.form__btn:hover {
+  background-color: green;
+  color: #fff;
+}
+.edit__btn:hover {
+  background-color: rgb(255, 196, 0);
+  color: #fff;
+}
+
+
+.form__btn:focus {
+  outline: 3px solid lightgreen;
+}
+.edit__btn:focus {
+  outline: 3px solid rgba(255, 196, 0, 0.527);
+}
+.form__btn[disabled] {
+  background-color: red;
+}
+/* 
+
+.form__btn[disabled]:hover {
+  background-color: none;
+} */
+
+.disabled {
+  opacity: 0.4;
+}
+.disabled:hover {
+  background-color: transparent;
+  color: green;
+  cursor: default;
+}
+
+/* table */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+tr:first-child {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+tr th:first-child,
+tr td:first-child {
+  text-align: center;
+}
+
+th, td {
+  padding: 10px 3px;
+}
+tr {
+  /* border-bottom: 1px solid red; */
+}
+.btn--edit {
+  background-color: rgb(255, 196, 0);
+  border: 1px solid orange;
+}
+.btn--edit:hover {
+  background-color: orange;
+}
+.btn--delete {
+  background-color: rgb(255, 60, 0);
+  color: #fff;
+  border: 1px solid red;
+}
+
+.btn--delete:hover {
+  background-color: red;
+}
+
+
+
+.show {
+  display: block;
+}
+.hide {
+  display: none; 
+}

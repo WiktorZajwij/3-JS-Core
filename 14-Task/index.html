@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="col col--left col--form">
+      <form class="form" name="user" action="#">
+        <ul class="form__list">
+          <li class="form__item">
+            <label class="form__label" for="login">Login</label>
+            <input class="login form__input" id="login" type="text" placeholder="Enter login" required>
+          </li>
+          <li class="form__item">
+            <label class="form__label" for="password">Password</label>
+            <input class="password form__input" id="password" type="password" placeholder="Enter password"  required>
+          </li>
+          <li class="form__item">
+            <label class="form__label" for="email">Email</label>
+            <input class="email form__input" id="email" type="email" placeholder="Enter email" required>
+          </li>
+        </ul>
+        <button class="btn form__btn" type="button">Add user</button>
+        <button class="btn edit__btn hide" type="button">Edit user</button>
+
+      </form>
+    </div>
+    <div class="col col-right col-table">
+      <table class="table">
+        <thead>
+          <tr class="table__row">
+            <th>#</th>
+            <th>Login</th>
+            <th>Password</th>
+            <th>Email</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table__row table__row--edit hide">
+            <td>#</td>
+            <td>Login</td>
+            <td>Password</td>
+            <td>Email</td>
+            <td><button class="btn btn--edit" type="button" onclick="btnEdit">Edit</button></td>
+            <td><button class="btn btn--delete" type="button">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+  <script src="./script.js"></script>
+</body>
+</html>
