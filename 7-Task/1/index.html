@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    } 
+    .wrapper {
+      padding: 15px;
+      height: 500px;
+    }
+    .title {
+      cursor: pointer;
+      text-shadow: 0 0 5px #fff;
+    }
+    .block-color, .block-image {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%); 
+      border: 1px solid black;
+      width: 300px;
+      height: 180px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .block-inner {
+      box-sizing: border-box;
+      width:100px;
+      height: 60px;
+      border: 1px solid black;
+      background-size: 300px;
+      background-position: center;
+      cursor: pointer;
+    }
+
+
+    .display-none {
+      display: none;
+    }
+    .display-block {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h2 class="title change-color">Колір</h2>
+    <h2 class="title change-image">Зображення</h2>
+    
+    <div class="block-color display-none" onclick="color()">
+      <div class="block-inner block-inner-1" data-bgc="DarkCyan"></div>
+      <div class="block-inner block-inner-2" data-bgc="Maroon"></div>
+      <div class="block-inner block-inner-3" data-bgc="MediumSeaGreen"></div>
+      <div class="block-inner block-inner-4" data-bgc="LimeGreen"></div>
+      <div class="block-inner block-inner-5" data-bgc="LightSlateGrey"></div>
+      <div class="block-inner block-inner-6" data-bgc="red"></div>
+      <div class="block-inner block-inner-7" data-bgc="MediumBlue"></div>
+      <div class="block-inner block-inner-8" data-bgc="Purple"></div>
+      <div class="block-inner block-inner-9" data-bgc="Olive"></div>
+    </div>
+    
+    
+    <div class="block-image display-none" onclick="image()">
+      <div class="block-inner block-inner-1" data-bgi="images/1.jpg"></div>
+      <div class="block-inner block-inner-2" data-bgi="images/2.jpg"></div>
+      <div class="block-inner block-inner-3" data-bgi="images/3.jpg"></div>
+      <div class="block-inner block-inner-4" data-bgi="images/4.jpg"></div>
+      <div class="block-inner block-inner-5" data-bgi="images/5.jpg"></div>
+      <div class="block-inner block-inner-6" data-bgi="images/6.jpg"></div>
+      <div class="block-inner block-inner-7" data-bgi="images/7.jpg"></div>
+      <div class="block-inner block-inner-8" data-bgi="images/8.jpg"></div>
+      <div class="block-inner block-inner-9" data-bgi="images/9.jpg"></div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
