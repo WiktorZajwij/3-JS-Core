@@ -6,7 +6,7 @@ $(document).ready(function () {
   let lastTime = $('.last-time');
   let chose = 1;
   let check = true;
-  let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
 
   $('#checkRes').attr('disabled', 'disabled');
   $('#checkRes').addClass('disabled');
@@ -33,13 +33,13 @@ $(document).ready(function () {
 
  
   function numberPosition() {
-    let check = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+    let check = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     let position;
-    for (let i = 0; i < 9; i++) {
+    for (let i = 0; i < 16; i++) {
       $("#left > .number").attr("value", "fill");
       $("#right > .number").removeAttr("value");
       do {
-        position = Math.round(Math.random() * 8);
+        position = Math.round(Math.random() * 15);
       } while (check[position]);
       $(`.num-in:eq(${i})`).attr("value", `${position + 1}`);
       check[position] = 1;
@@ -105,7 +105,7 @@ $(document).ready(function () {
   // WIN
   function win() {
     $('.modal-text').css('text-align', 'center')
-    $('.modal-text').text(`YOU WIN`)
+    $('.modal-text').text(`Woohoo, well done, you did it!`)
     $('#check').css('display', 'none');
     $('#close').css('display', 'none');
     $('#closeReload').css('display', 'block');
